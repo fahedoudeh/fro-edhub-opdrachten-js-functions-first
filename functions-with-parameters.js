@@ -16,6 +16,11 @@ console.log(result);
 // ---- Verwachte uitkomsten:
 // greeter("Jan") geeft "Hoi Jan!"
 // greeter("Kees") geeft "Hoi Kees!"
+function greeter(name) {
+  const greet = `Hoi ${name}`
+  return greet;
+}
+console.log(greeter("Fahed"));
 
 
 
@@ -26,6 +31,11 @@ console.log(result);
 // minutesToSeconds(3) geeft 180
 // minutesToSeconds(23) geeft 1380
 
+function minutesToSeconds(minutes) {
+  return minutes * 60;
+}
+console.log(minutesToSeconds(23))
+
 
 
 /* Opdracht 3 */
@@ -35,6 +45,11 @@ console.log(result);
 // merge("abra", "cadabra") geeft "abracadabra"
 // merge("zoet", "sappig") geeft "zoetsappig"
 
+function merge(firstWord, secondWord) {
+  return firstWord + secondWord;
+}
+
+console.log(merge("abra", "cadabra"))
 
 
 
@@ -44,7 +59,10 @@ console.log(result);
 // calculateDogYears(6) geeft "Jouw hond is 42 jaar oud in mensenjaren."
 // calculateDogYears(2) geeft "Jouw hond is 14 jaar oud in mensenjaren."
 
-
+function calculateDogYears(dogAge) {
+  return `Jouw hond is ${dogAge * 7} jaar oud in mensenjaren.`
+}
+console.log(calculateDogYears(6))
 
 /* Opdracht 5 */
 // Schrijf een functie genaamd wrapper, die twee parameters verwacht: een woord en een karakter
@@ -54,6 +72,11 @@ console.log(result);
 // wrapper("beep", "_") geeft "_beep_"
 // wrapper("kaas", "Q") geeft "QkaasQ"
 
+function wrapper(word, char) {
+  return `${char}${word}${char}`;
+}
+
+console.log(wrapper("bril", "*"))
 
 
 /* Bonus opdracht  */
@@ -62,4 +85,12 @@ console.log(result);
 // createDetailString({ firstName: 'Jan', lastName: 'Jansen', profession: 'docent'}) geeft "Het beroep vam Jan Jansen is docent."
 // createDetailString({ firstName: 'Kees', lastName: 'Klaasen', profession: 'brandweerman'}) geeft "Het beroep vam Kees Klaasen is brandweerman."
 
+function createDetailString(personDetail) {
+  return `Het beroep van ${personDetail.firstName} ${personDetail.lastName} is ${personDetail.profession}`
+}
+
+person1 = { firstName: 'Jan', lastName: 'Jansen', profession: 'docent'}
+person2 = { firstName: 'Kees', lastName: 'Klaasen', profession: 'brandweerman'}
+
+console.log(createDetailString(person2))
 
