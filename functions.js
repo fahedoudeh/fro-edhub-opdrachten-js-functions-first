@@ -11,7 +11,7 @@ const greeting = morningGreeter();
 console.log(greeting);
 
 /* Opdracht 1 */
-// Schrijf een functie genaamd getSchool, die de string "Novi Hogeschool" teruggeeft
+// Schrijf een functie genaamd getSchool, die de string "Novi Hogeschool"  teruggeeft
 // ---- Verwachte uitkomst bij het aanroepen van de functie: "Novi Hogeschool"
 
 
